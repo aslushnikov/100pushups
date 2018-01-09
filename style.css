@@ -86,3 +86,7 @@ body {
   background: linear-gradient(to right, #04d804 , #56a556);
   position: absolute;
 }
+
+a, a:visited, a:hover, a:active {
+  color: rgb(0, 0, 238); /* webkit-link color */
+}
