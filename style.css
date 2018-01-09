@@ -11,10 +11,18 @@ body {
   font-size: 48px;
   flex: 0 1 auto;
   margin-bottom: 0;
+  margin-left: 87px;
 }
 
 .subtitle {
   flex: 0 1 auto;
+  margin-left: 87px;
+}
+
+@media (max-width: 700px) {
+  .title {
+    font-size: 28px;
+  }
 }
 
 .content {
@@ -77,4 +85,8 @@ body {
   transition: all 1s ease;
   background: linear-gradient(to right, #04d804 , #56a556);
   position: absolute;
+}
+
+.github {
+  margin-left: 87px;
 }
