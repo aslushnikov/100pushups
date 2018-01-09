@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: helvetica, arial;
+}
+
+.title {
+  font-family: 'Monoton', cursive;
+  font-weight: 100;
+  font-size: 48px;
+  flex: 0 1 auto;
+}
+
+.subtitle {
+  flex: 0 1 auto;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 700px;
+  width: 100%;
+  height: 50%;
+  flex: none;
+}
+
+.contestant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
+}
+
+.avatar {
+  width: 75px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0px 0px 6px 0px #333;
+  margin: 10px;
+}
+
+.progress-wrap {
+  position: relative;
+  width: 90%;
+}
+
+.progress {
+  background-color: lightgray;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 6px 0px #333;
+  height: 28px;
+  margin: 15px;
+}
+
+.progress-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.progress-fill {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0%;
+  transition: all 1s ease;
+  background: linear-gradient(to right, #04d804 , #56a556);
+  position: absolute;
+}
