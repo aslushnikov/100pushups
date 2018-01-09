@@ -11,6 +11,6 @@ var progress = [
   },
 ];
 
-for (const entry of progress)
+for (var entry of progress)
   entry.date = new Date(entry.date);
 
