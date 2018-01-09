@@ -47,7 +47,7 @@ body {
   width: 75px;
   border-radius: 50%;
   border: 2px solid white;
-  box-shadow: 0px 0px 6px 0px #333;
+  box-shadow: 0px 0px 6px 0px #c1c0c0;
   margin: 10px;
 }
 
@@ -61,7 +61,7 @@ body {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0px 0px 6px 0px #333;
+  box-shadow: 0px 0px 6px 0px #bbb;
   height: 28px;
   margin: 15px;
 }
