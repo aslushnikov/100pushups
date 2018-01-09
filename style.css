@@ -11,12 +11,12 @@ body {
   font-size: 48px;
   flex: 0 1 auto;
   margin-bottom: 0;
-  margin-left: 87px;
+  margin-left: 99px;
 }
 
 .subtitle {
   flex: 0 1 auto;
-  margin-left: 87px;
+  margin-left: 99px;
 }
 
 @media (max-width: 700px) {
