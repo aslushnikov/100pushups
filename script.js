@@ -8,6 +8,7 @@ const PUSHUPS_DAYILY = 100;
 const TOTAL_PUSHUPS = PUSHUPS_DAYILY * TOTAL_DAYS;
 
 const progress = [
+  { date: 'Jan 9, 2018', a: 0+10, s: 0},
   { date: 'Jan 8, 2018', a: 100, s: 100},
 ];
 
