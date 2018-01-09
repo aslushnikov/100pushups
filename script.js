@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.s .progress-total .progress-label').textContent = `total: ${sTotal}/${TOTAL_PUSHUPS}`;
 
 
-  requestAnimationFrame(() => {
+  requestAnimationFrame(function () {
     {
       var progressToday = document.querySelector('.a .progress-today .progress-fill');
       progressToday.style.setProperty('width', Math.round(aToday * 100 / PUSHUPS_DAYILY) + '%');
