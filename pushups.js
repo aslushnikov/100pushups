@@ -1,5 +1,10 @@
 var progress = [
   {
+    date: 'Jan 12, 2018',
+    andrey: 0,
+    sergey: 0+20+20,
+  },
+  {
     date: 'Jan 11, 2018',
     andrey: 0+15+15+15+15+15+15+10,
     sergey: 0+25+20+20,
