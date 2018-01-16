@@ -1,4 +1,4 @@
-var progress = [
+([
   {
     date: 'Jan 16, 2018',
     andrey: 0+15,
@@ -44,8 +44,4 @@ var progress = [
     andrey: 100,
     sergey: 100
   },
-];
-
-for (var entry of progress)
-  entry.date = new Date(entry.date);
-
+])

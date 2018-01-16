@@ -2,6 +2,8 @@
 <link rel='stylesheet' href='./style.css'>
 <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 
+<script type='text/javascript' src='./script.js'></script>
+
 <h1 class='title'>Push-up challenge</h1>
 <div class='subtitle'></div>
 
@@ -37,19 +39,3 @@
     </a>
   </div>
 </div>
-
-<script type='text/javascript'>
-  window.addEventListener('DOMContentLoaded', function () {
-    var dataScript = document.createElement('script');
-    dataScript.type = 'text/javascript';
-    dataScript.src = './pushups.js?' + new Date().getTime();
-    dataScript.onload = function() {
-      // data is the dependency of code
-      var codeScript = document.createElement('script');
-      codeScript.type = 'text/javascript';
-      codeScript.src = './script.js';
-      document.body.appendChild(codeScript);
-    };
-    document.body.appendChild(dataScript);
-  }, false);
-</script>
