@@ -1,8 +1,9 @@
 var START = new Date('Jan 8, 2018'); // Inclusive
 var END = new Date('Feb 7, 2018'); // Exclusive
 var MS_IN_DAY = 24 * 60 * 60 * 1000;
-var TODAY = new Date();
-var YESTERDAY = new Date(Date.now() - MS_IN_DAY);
+var DELAY = 5 * 60 * 60 * 1000; // Delay time to show yesterday's results after midnight until 5AM
+var TODAY = new Date(Date.now() - DELAY);
+var YESTERDAY = new Date(Date.now() - DELAY - MS_IN_DAY);
 var TOTAL_DAYS = Math.round((END.getTime() - START.getTime()) / MS_IN_DAY);
 var PUSHUPS_DAYILY = 100;
 var TOTAL_PUSHUPS = PUSHUPS_DAYILY * TOTAL_DAYS;
