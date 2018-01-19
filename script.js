@@ -21,16 +21,20 @@ function renderPushups(pushups) {
 
   var aTotal = 0;
   var sTotal = 0;
+  var tTotal = 0;
   var aToday = 0;
   var sToday = 0;
+  var tToday = 0;
   for (var entry of progress) {
     if (entry.date <= TODAY) {
       aTotal += entry.andrey;
       sTotal += entry.sergey;
+      tTotal += entry.timur;
     }
     if (entry.date > YESTERDAY && entry.date <= TODAY) {
       aToday = entry.andrey;
       sToday = entry.sergey;
+      tToday = entry.timur;
     }
   }
   var daysIn = 0;
@@ -43,6 +47,8 @@ function renderPushups(pushups) {
   document.querySelector('.a .progress-total .progress-label').textContent = `total: ${aTotal}/${TOTAL_PUSHUPS}`;
   document.querySelector('.s .progress-today .progress-label').textContent = `today: ${sToday}/100`;
   document.querySelector('.s .progress-total .progress-label').textContent = `total: ${sTotal}/${TOTAL_PUSHUPS}`;
+  document.querySelector('.t .progress-today .progress-label').textContent = `today: ${tToday}/100`;
+  document.querySelector('.t .progress-total .progress-label').textContent = `total: ${tTotal}/${TOTAL_PUSHUPS}`;
 
   requestAnimationFrame(function () {
     {
