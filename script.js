@@ -62,7 +62,13 @@ function renderPushups(pushups) {
       progressToday.style.setProperty('width', Math.round(sToday * 100 / PUSHUPS_DAYILY) + '%');
       var progressTotal = document.querySelector('.s .progress-total .progress-fill');
       progressTotal.style.setProperty('width', Math.round(sTotal * 100 / TOTAL_PUSHUPS) + '%');
-    }
+    };
+    {
+      var progressToday = document.querySelector('.t .progress-today .progress-fill');
+      progressToday.style.setProperty('width', Math.round(tToday * 100 / PUSHUPS_DAYILY) + '%');
+      var progressTotal = document.querySelector('.t .progress-total .progress-fill');
+      progressTotal.style.setProperty('width', Math.round(tTotal * 100 / TOTAL_PUSHUPS) + '%');
+    };
   });
 }
 
