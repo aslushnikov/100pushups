@@ -5,8 +5,8 @@ var DELAY = 5 * 60 * 60 * 1000; // Delay time to show yesterday's results after 
 var TODAY = new Date(Date.now() - DELAY);
 var YESTERDAY = new Date(Date.now() - DELAY - MS_IN_DAY);
 var TOTAL_DAYS = Math.round((END.getTime() - START.getTime()) / MS_IN_DAY);
-var PUSHUPS_DAYILY = 100;
-var TOTAL_PUSHUPS = PUSHUPS_DAYILY * TOTAL_DAYS;
+var PUSHUPS_DAILY = 100;
+var TOTAL_PUSHUPS = PUSHUPS_DAILY * TOTAL_DAYS;
 
 var dataPromise = httpGET('https://raw.githubusercontent.com/aslushnikov/100pushups/master/pushups.js');
 
@@ -53,19 +53,19 @@ function renderPushups(pushups) {
   requestAnimationFrame(function () {
     {
       var progressToday = document.querySelector('.a .progress-today .progress-fill');
-      progressToday.style.setProperty('width', Math.round(aToday * 100 / PUSHUPS_DAYILY) + '%');
+      progressToday.style.setProperty('width', Math.round(aToday * 100 / PUSHUPS_DAILY) + '%');
       var progressTotal = document.querySelector('.a .progress-total .progress-fill');
       progressTotal.style.setProperty('width', Math.round(aTotal * 100 / TOTAL_PUSHUPS) + '%');
     };
     {
       var progressToday = document.querySelector('.s .progress-today .progress-fill');
-      progressToday.style.setProperty('width', Math.round(sToday * 100 / PUSHUPS_DAYILY) + '%');
+      progressToday.style.setProperty('width', Math.round(sToday * 100 / PUSHUPS_DAILY) + '%');
       var progressTotal = document.querySelector('.s .progress-total .progress-fill');
       progressTotal.style.setProperty('width', Math.round(sTotal * 100 / TOTAL_PUSHUPS) + '%');
     };
     {
       var progressToday = document.querySelector('.t .progress-today .progress-fill');
-      progressToday.style.setProperty('width', Math.round(tToday * 100 / PUSHUPS_DAYILY) + '%');
+      progressToday.style.setProperty('width', Math.round(tToday * 100 / PUSHUPS_DAILY) + '%');
       var progressTotal = document.querySelector('.t .progress-total .progress-fill');
       progressTotal.style.setProperty('width', Math.round(tTotal * 100 / TOTAL_PUSHUPS) + '%');
     };
