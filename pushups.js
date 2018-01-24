@@ -1,7 +1,7 @@
 ([
   {
     date: 'Jan 23, 2018',
-    andrey: 0,
+    andrey: 0+15,
     sergey: 0+20+20,
     timur: 0,
   },
