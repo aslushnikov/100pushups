@@ -8,7 +8,7 @@ var TOTAL_DAYS = Math.round((END.getTime() - START.getTime()) / MS_IN_DAY);
 var PUSHUPS_DAILY = 100;
 var TOTAL_PUSHUPS = PUSHUPS_DAILY * TOTAL_DAYS;
 
-var dataPromise = httpGET('https://raw.githubusercontent.com/aslushnikov/100pushups/master/pushups.js');
+var dataPromise = httpGET('https://rawgit.com/aslushnikov/100pushups/master/pushups.js');
 
 window.addEventListener('DOMContentLoaded', function() {
   dataPromise.then(renderPushups);
