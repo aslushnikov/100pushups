@@ -2,13 +2,13 @@
   {
     date: 'Jan 27, 2018',
     andrey: 0+15,
-    sergey: 0,
+    sergey: 0+25,
     timur: 0,
   },
   {
     date: 'Jan 26, 2018',
     andrey: 0+10+15+10+15+15+15+20,
-    sergey: 0+30+20+25+25,
+    sergey: 0+30+20+25+25+25,
     timur: 0,
   },
   {
