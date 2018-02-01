@@ -2,7 +2,7 @@
   {
     date: 'Jan 31, 2018',
     andrey: 0+10+10+20+20+20,
-    sergey: 0,
+    sergey: 0+30,
     timur: 0,
   },
   {
