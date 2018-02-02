@@ -2,7 +2,7 @@
   {
     date: 'Feb 01, 2018',
     andrey: 0+5+5/*sphinx*/+5/*spider*/+10+15+20+20+10/*sphinx*/+10/*sphinx*/,
-    sergey: 0+30+30+10/*sphinx*/,
+    sergey: 0+30+30+10/*sphinx*/+30,
     timur: 0,
   },
   {
