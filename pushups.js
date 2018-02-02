@@ -1,7 +1,7 @@
 ([
   {
     date: 'Feb 01, 2018',
-    andrey: 0+5+5/*sphinx*/+5/*spider*/,
+    andrey: 0+5+5/*sphinx*/+5/*spider*/+10,
     sergey: 0+30,
     timur: 0,
   },
