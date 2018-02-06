@@ -1,5 +1,11 @@
 ([
   {
+    date: 'Feb 06, 2018',
+    andrey: 0+10+10+10,
+    sergey: 0,
+    timur: 0,
+  },
+  {
     date: 'Feb 05, 2018',
     andrey: 0+15+15+15+15+10/*reversed*/+10/*sphinx*/+10/*reversed*/+10/*sphinx*/,
     sergey: 0+25+30+30,
