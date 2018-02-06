@@ -2,7 +2,7 @@
   {
     date: 'Feb 05, 2018',
     andrey: 0+15+15+15+15+10/*reversed*/+10/*sphinx*/+10/*reversed*/+10/*sphinx*/,
-    sergey: 0+25,
+    sergey: 0+25+30,
     timur: 0,
   },
   {
