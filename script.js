@@ -69,6 +69,11 @@ function renderPushups(pushups) {
       var progressTotal = document.querySelector('.t .progress-total .progress-fill');
       progressTotal.style.setProperty('width', Math.round(tTotal * 100 / TOTAL_PUSHUPS) + '%');
     };
+    if (TODAY > END) {
+      var congrats = document.querySelector('.congratulations-text');
+      congrats.classList.add('animation');
+    }
+
   });
 }
 
