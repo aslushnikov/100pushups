@@ -17,6 +17,8 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 11;
+  user-select: none;
+  pointer-events: none;
 }
 
 .congratulations-text {
